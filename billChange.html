@@ -117,6 +117,7 @@ https://templatemo.com/tm-559-zay-shop
     </nav>
     <!-- Close Header -->
 
+
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -138,88 +139,135 @@ https://templatemo.com/tm-559-zay-shop
 
 
     <!-- Open Content -->
-    <section>
-        <div class="container p-5">
-            <div class="d-flex justify-content-center row w-100">
-                <div class="col-md-8">
-                    <div class="p-2">
-                        <h4>Giỏ Hàng</h4>
+    <div class="container mt-5">
+        <div class="row flex-row-reverse">
 
-                    </div>
-                    <div
-                        class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded ">
-                        <div class="mr-1">
-                            <img class="rounded" src="/assets/img/bitit.jpg" width="70">
-                        </div>
-                        <div class="d-flex flex-column align-items-center product-details"><span
-                                class="font-weight-bold">Giày Chạy Bộ Nam Biti's Hunter Running HSM003800</span>
-                            <div class="size mr-1"><span class="text-grey">Size:</span><span
-                                    class="font-weight-bold">&nbsp;39</span></div>
-                            <div class="color"><span class="text-grey">Màu:</span><span
-                                    class="font-weight-bold">&nbsp;Xanh Dương</span></div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger btn"></i>
-                            <h5 class="text-grey mt-1 mr-1 ml-1 btn">2</h5><i class="fa fa-plus text-success btn"></i>
-                        </div>
-                        <div>
-                            <h5 class="text-grey">1.050.000 <span>VND</span></h5>
-                        </div>
-                        <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
-                    </div>
-                    <div
-                        class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded ">
-                        <div class="mr-1">
-                            <img class="rounded" src="/assets/img/bitit.jpg" width="70">
-                        </div>
-                        <div class="d-flex flex-column align-items-center product-details"><span
-                                class="font-weight-bold">Giày Chạy Bộ Nam
-                                Biti's Hunter Running HSM003800</span>
-                            <div class="size mr-1"><span class="text-grey">Size:</span><span
-                                    class="font-weight-bold">&nbsp;39</span></div>
-                            <div class="color"><span class="text-grey">Màu:</span><span
-                                    class="font-weight-bold">&nbsp;Xanh Dương</span>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger btn"></i>
-                            <h5 class="text-grey mt-1 mr-1 ml-1 btn">2</h5><i class="fa fa-plus text-success btn"></i>
-                        </div>
-                        <div>
-                            <h5 class="text-grey">1.050.000 <span>VND</span></h5>
-                        </div>
-                        <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
-                    </div>
-                    <div
-                        class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded ">
-                        <div class="mr-1">
-                            <img class="rounded" src="/assets/img/bitit.jpg" width="70">
-                        </div>
-                        <div class="d-flex flex-column align-items-center product-details"><span
-                                class="font-weight-bold">Giày Chạy Bộ Nam
-                                Biti's Hunter Running HSM003800</span>
-                            <div class="size mr-1"><span class="text-grey">Size:</span><span
-                                    class="font-weight-bold">&nbsp;39</span></div>
-                            <div class="color"><span class="text-grey">Màu:</span><span
-                                    class="font-weight-bold">&nbsp;Xanh Dương</span>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger btn"></i>
-                            <h5 class="text-grey mt-1 mr-1 ml-1 btn">2</h5><i class="fa fa-plus text-success btn"></i>
-                        </div>
-                        <div>
-                            <h5 class="text-grey">1.050.000 <span>VND</span></h5>
-                        </div>
-                        <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><input type="text"
-                            class="form-control border-0 gift-card" placeholder="Mã giảm giá"><button
-                            class="btn btn-outline-warning btn-sm ml-2" type="button">Áp Dụng</button></div>
-                    <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><a href="checkout.html"
-                            class="btn btn-warning btn-block btn-lg ml-2 pay-button" type="button">Tiến hành thanh
-                            toán</a></div>
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Chỉnh sửa hoá đơn</h4>
+                <div class="d-flex justify-content-between mb-3">
+                    <button class="btn btn-outline-warning">
+                        Hoàn Thành
+                    </button><button class="btn btn-outline-danger">
+                        Thoát
+                    </button>
                 </div>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Họ và Tên</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Số điện thoại</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">Tỉnh/Thành Phố</label>
+                            <select class="custom-select d-block w-100" id="city" required>
+                                <option value="">Chọn...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Vui lòng chọn đúng tỉnh/Thành Phố.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">Quận/Huyện</label>
+                            <select class="custom-select d-block w-100" id="district" required>
+                                <option value="">Chọn...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Vui lòng chọn đúng quận/huyện
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">Phường/Xã</label>
+                            <select class="custom-select d-block w-100" id="ward" required>
+                                <option value="">Chọn...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Vui lòng chọn đúng Phường/Xã
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">Địa Chỉ</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th></th>
+                                    <th scope="col">Đon giá(VNĐ)</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Thuế(%)</th>
+                                    <th scope="col">Tổng tiền(VNĐ)</th>
+                                    <th scope="col">Trạng Thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><img class="rounded" src="/assets/img/bitit.jpg" width="70">
+                                    </th>
+                                    <td>Giày Chạy Bộ Nam Biti's Hunter Running HSM003800</td>
+                                    <td>
+                                        1.050.000
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>10%</td>
+                                    <td>1.155.000</td>
+                                    <td><b>Chờ xác nhận hoàn trả</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-4 order-md-2 mb-4 mt-5">
+                <ul class="list-group mb-3 mt-5">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0 text-center my-1">Đổi Mật Khẩu</h6>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed text-danger">
+                        <h6 class="my-0 text-center my-1">&#8594; Đơn Hàng</h6>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0 text-center my-1">Thông tin tài khoản</h6>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0 text-center my-1">Đăng Xuất</h6>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Close Content -->
 
 
@@ -359,9 +407,77 @@ https://templatemo.com/tm-559-zay-shop
                 }
             }]
         });
+
+        function payProcess() {
+            alert("OKe")
+        }
     </script>
     <!-- End Slider Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+        var citis = document.getElementById("city");
+        var districts = document.getElementById("district");
+        var wards = document.getElementById("ward");
+        var Parameter = {
+            url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+            method: "GET",
+            responseType: "application/json",
+        };
+        var promise = axios(Parameter);
+        promise.then(function (result) {
+            renderCity(result.data);
+        });
 
+        function renderCity(data) {
+            for (const x of data) {
+                citis.options[citis.options.length] = new Option(x.Name, x.Id);
+            }
+            citis.onchange = function () {
+                district.length = 1;
+                ward.length = 1;
+                if (this.value != "") {
+                    const result = data.filter(n => n.Id === this.value);
+
+                    for (const k of result[0].Districts) {
+                        district.options[district.options.length] = new Option(k.Name, k.Id);
+                    }
+                }
+            };
+            district.onchange = function () {
+                ward.length = 1;
+                const dataCity = data.filter((n) => n.Id === citis.value);
+                if (this.value != "") {
+                    const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+                    for (const w of dataWards) {
+                        wards.options[wards.options.length] = new Option(w.Name, w.Id);
+                    }
+                }
+            };
+        }
+
+        function submitCheckout() {
+
+        }
+    </script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thông Báo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có muốn đặt hàng không???
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <a href="informationCart.html" class="btn btn-primary">Đặt thôi !!!</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -88,7 +88,7 @@
                             <a class="nav-link" href="shop.html">Sản Phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Chính Sách</a>
+                            <a class="nav-link" href="informationCart.html">Chính Sách</a>
                         </li>
                     </ul>
                 </div>
@@ -323,14 +323,80 @@
                 <!-- Card item end -->
             </div>
             <div id="menu2" class="container tab-pane mt-1 fade"><br>
-                <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam.</p>
+                <!-- Card item start -->
+                <div class="card mb-3" style="background-color: blanchedalmond;">
+                    <div>
+                        <div class="d-flex justify-content-between p-3 align-items-center mt-3">
+                            <h6><b>HD0001903200</b>
+                            </h6>
+                            <div class="text-center" style="font-size: 15px;">Chờ Lấy Hàng</div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-start">
+                                    <p class="col">Phí Vận Chuyển</p>
+                                    <div class="col"></div>
+                                    <p class="col">32.000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-around">
+                                    <p class="col">Tổng Tiền</p>
+                                    <div class="col"></div>
+                                    <p class="col">555.000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between p-3 align-items-center mt-3">
+                            <button type="button" class="btn btn-outline-warning">Chi tiết đơn hàng</button>
+                            <button type="button" class="btn btn-outline-warning">Huỷ Đơn</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card item end -->
             </div>
             <div id="menu3" class="container tab-pane mt-1 fade"><br>
-                <h3>Menu 3</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
+                <!-- Card item start -->
+                <div class="card mb-3" style="background-color: blanchedalmond;">
+                    <div>
+                        <div class="d-flex justify-content-between p-3 align-items-center mt-3">
+                            <h6><b>HD0001903200</b>
+                            </h6>
+                            <div class="text-center" style="font-size: 15px;">Đang Giao</div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-start">
+                                    <p class="col">Phí Vận Chuyển</p>
+                                    <div class="col"></div>
+                                    <p class="col">32.000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-around">
+                                    <p class="col">Tổng Tiền</p>
+                                    <div class="col"></div>
+                                    <p class="col">555.000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between p-3 align-items-center mt-3">
+                            <button type="button" class="btn btn-outline-warning">Chi tiết đơn hàng</button>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card item end -->
             </div>
             <div id="menu4" class="container tab-pane my-1 fade"><br>
 
@@ -365,7 +431,8 @@
                         </div>
                         <div class="d-flex justify-content-between p-3 align-items-center mt-3">
                             <button type="button" class="btn btn-outline-warning">Chi tiết hoá đơn</button>
-                            <button type="button" class="btn btn-outline-warning">Hoàn trả</button>
+                            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Hoàn trả</button>
                         </div>
                     </div>
                 </div>
@@ -409,10 +476,42 @@
                 <!-- Card item end -->
             </div>
             <div id="menu5" class="container tab-pane mt-1 fade"><br>
-                <h3>Menu 5</h3>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-                    quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                </p>
+                <!-- Card item start -->
+                <div class="card mb-3" style="background-color: blanchedalmond;">
+                    <div>
+                        <div class="d-flex justify-content-between p-3 align-items-center mt-3">
+                            <h6><b>HD0001903200</b>
+                            </h6>
+                            <div class="text-center" style="font-size: 15px;">Giao Thành Công</div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-start">
+                                    <p class="col">Phí Vận Chuyển</p>
+                                    <div class="col"></div>
+                                    <p class="col">32.000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-around">
+                                    <p class="col">Tổng Tiền</p>
+                                    <div class="col"></div>
+                                    <p class="col">555.000 VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between p-3 align-items-center mt-3">
+                            <button type="button" class="btn btn-outline-success">Đã Nhận Hàng</button>
+                            <button type="button" class="btn btn-outline-success">Đánh Giá</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card item end -->
             </div>
             <div id="menu6" class="container tab-pane mt-1 fade"><br>
                 <h3>Menu 6</h3>
@@ -564,7 +663,53 @@
         });
     </script>
     <!-- End Slider Script -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog w-100 ">
+            <div style="display: flex;align-items: center; margin-top: 30vh;">
+                <div class="modal-content" style="background-color: rgba(252, 252, 252, 0.69);">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            <div class="d-flex">
+                                <b>Trả Hàng</b>
+                            </div>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><input class="form-check-input" type="checkbox" id="checkboxNoLabel"
+                                            value="" aria-label="..."></th>
+                                    <th scope="col">Sản Phẩm</th>
+                                    <th scope="col">Đơn Giá</th>
+                                    <th scope="col">Số Lượng</th>
+                                    <th scope="col">Ghi chú</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><input class="form-check-input" type="checkbox" id="checkboxNoLabel"
+                                            value="" aria-label="..."></th>
+                                    <td>Giày Chạy Bộ Nam Biti's Hunter Running HSM003800</td>
+                                    <td>1.050.000 VNĐ</td>
+                                    <td><input type="number" class="form-control" style="width: 60px;"></td>
+                                    <td><textarea class="form-control" placeholder="Ghi chú" id="floatingTextarea2"
+                                            style="height: 100px;width: 100px;"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
+                    </div>
+                    <div class="modal-footer">
+                        <a type="button" class="btn btn-primary" href="billChange.html">Trả Hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
